@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+
+<div class="container">
+
+<h1 style="text-align: center;color: white;font-size: 50px;">ADD</h1>
+
+<div class="center">
+    <input id="ingilizce" class="ingilizce" type="text" placeholder="ingilizce kelime giriniz" >
+</div>
+
+
+<div class="center">
+    <input id="turkce" class="turkce" type="text" placeholder="turkce kelime giriniz"   >
+</div>
+
+
+
+
+
+
+<div class="center">
+    <input id="aciklama" class="aciklama" type="text" placeholder=" kelimenin anlami giriniz" >
+</div>
+
+
+
+
+<div style="text-align: center;margin-top: 70px;">
+
+<label class="ewew" style="color: white; font-size: 20px; " for="fileInput">add image</label>
+<input type="file" id="fileInput"  style="display: none;" >
+
+</div>
+
+<div class="center">
+    <button class="ewew" style="width: 50%; height: 30px; ;" onclick="resimGonderme()"  >click</button>
+
+</div>
+
+
+
+   
+
+   
+   </div> 
+
+
+
+
+
+
+ <script >
+
+// تعريف الدالة للحصول على التاريخ الحالي
+// function getCurrentDate() {
+//     var today = new Date();
+//     var day = today.getDate();
+//     var month = today.getMonth() + 1; // يبدأ شهر يناير من الرقم 0
+//     var year = today.getFullYear();
+
+//     // إعادة القيمة بصيغة نصية
+//     return day + '/' + month + '/' + year;
+// }
+
+
+
+
+    
+    function resimGonderme() {
+  
+var turkce = document.getElementById('turkce').value;
+var ingilizce = document.getElementById('ingilizce').value;
+var aciklama = document.getElementById('aciklama').value;
+var fileInput = document.getElementById('fileInput');
+var files = fileInput.files;
+
+if (turkce != "" && ingilizce != "" ) {
+var currentUserData = JSON.parse(sessionStorage.getItem("currentUserData"));
+var userEmail = currentUserData.email;
+
+// استرجاع بيانات المستخدم من localStorage
+var kullaniciData = JSON.parse(localStorage.getItem(userEmail)) || {};
+
+
+
+        if (files.length > 0) {
+            var file = files[0];
+            
+            // استخدم Compressor لضغط الصورة
+            new Compressor(file, {
+                quality: 0.1, // اضبط جودة الضغط (من 0 إلى 1)
+                success(result) {
+                    // استخدم FileReader لقراءة الصورة المضغوطة
+                    var reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                      
+
+                        var newData = {
+    kelime: ingilizce,
+    anlami: turkce,
+    aciklamaMetin: aciklama,
+    resimSrc:e.target.result,
+    kere:null,
+    cevablamaTarihi:null
+};
+
+// إضافة newData إلى kullaniciData باستخدام ingilizce كمفتاح
+kullaniciData[ingilizce] = newData;
+
+// تحديث المصفوفة في Local Storage
+localStorage.setItem(userEmail, JSON.stringify(kullaniciData));
+
+
+
+                        // فتح الصفحة الثانية
+                        window.location.href = 'home.html';
+                    };
+                    
+                    // اقرأ الصورة المضغوطة كـ DataURL
+                    reader.readAsDataURL(result);
+                   
+                },
+                error(err) {
+                    console.error('Error compressing image:', err);
+                }
+                
+            });
+        } 
+       
+        else {
+            
+         
+
+
+
+            var newData = {
+    kelime: ingilizce,
+    anlami: turkce,
+    aciklamaMetin: aciklama,
+    resimSrc:"",
+    kere:"",
+    cevablamaTarihi:null
+};
+
+// إضافة newData إلى kullaniciData باستخدام ingilizce كمفتاح
+kullaniciData[ingilizce] = newData;
+
+// تحديث المصفوفة في Local Storage
+localStorage.setItem(userEmail, JSON.stringify(kullaniciData));
+
+
+
+                        // فتح الصفحة الثانية
+                        window.location.href = 'home.html';
+
+
+        }
+    
+    }
+
+
+else
+{
+    alert('bos olmaz');
+}
+}
+</script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/compressorjs@latest/dist/compressor.min.js"></script>
+
+   
+<script src="home.js"></script>
+
+
+
+</body>
+</html>
+
+

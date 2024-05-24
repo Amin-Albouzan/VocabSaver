@@ -1,0 +1,148 @@
+body{
+    /* background-image: -moz-linear-gradient(skyblue ,rgba(34, 34, 238, 0.778)); */
+    background-color: rgb(3, 3, 31);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    }
+
+.zenan{
+width: 60%;
+height: 95%;
+background-color: rgb(250,250,250,.1);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo p{
+font-size: 50px;
+
+}
+
+.name{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name input{
+
+    padding: 10px;
+    width: 55%;
+    margin: 20px;
+    text-align: center;
+   
+}
+
+
+
+
+.email{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email input{
+
+    padding: 10px;
+    width: 55%;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.password{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.password input{
+
+    padding: 10px;
+    width: 55%;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.con{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con input{
+
+    padding: 10px;
+    width: 55%;
+    margin: 20px;
+    text-align: center;
+  
+}
+
+.bot{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bot button{
+
+    padding: 10px;
+    width: 30%;
+    margin: 11px;
+    text-align: center;
+border-radius: 10px;
+color: rgb(46, 180, 233);
+cursor: pointer;
+}
+.have{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo p:hover{
+color: rgb(25, 171, 229);
+}
+
+@media(max-width:900px)
+{
+.zenan{
+width: 95%;
+}
+}
+
+
+#passwordOrConfrm
+{
+
+    text-align: center;
+    color: rgb(190, 23, 23);
+
+}
+
+
+
+
+
+
+
+
+
+
+

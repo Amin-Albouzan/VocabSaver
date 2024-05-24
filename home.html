@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body id="body">
+    
+    <div style="display: flex;">
+<div class="menu" style="font-size: 27px;">
+<ul>
+
+<li class="profile">
+    <div class="img-box">
+        <img src="" alt="">
+    </div>
+
+
+<h2 id="profileName" ></h2>
+  
+</li>
+
+
+
+<li >
+<a style="background-color:  #ffffff55;" href="home.html">
+<i class="fas fa-home"></i>
+<p  >home</p>
+</a>
+
+</li>
+
+<li>
+    <a href="add.html">
+    <i class="fa-solid fa-plus"></i>
+    <p>Add</p>
+    </a>
+    
+ </li>
+     
+         <li>
+        <a href="Quiz.html">
+        <i class="fa-regular fa-clipboard"></i>
+        <p>Quiz</p>
+        </a>
+        
+        </li>
+        
+
+           
+            
+                        <li>
+                        <a href="profile.html">
+                      <i class="fa-regular fa-user"></i>
+                        <p>Profile</p>
+                        </a>
+                        
+                        </li>
+                        
+                
+                            <!-- <li class="logout">
+                            <a href="#">
+                            <i class="fas fa-sign-out"></i>
+                            <p>log out</p>
+                            </a>
+                            
+                            </li> -->
+                            
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa-solid fa-gear"></i>
+                                <p>settings</p>
+                                </a>
+                                
+                                </li>
+                
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="countent">
+
+
+
+
+
+
+<div class="title">
+    <i class="fa-solid fa-table"></i>
+    <i class="fa-solid fa-table"></i>
+</div>
+
+
+<!-- 
+<div style=" width: 100%; display: flex; justify-content: space-between; padding-bottom: 90px; ">
+    <p  style="width:300px ; text-align: center; ;font-size: 40px;font-weight: 600; color: rgb(109, 109, 251); ">INGILIZCE</p>
+    <p style="width:300px ; text-align: center; ;font-size: 40px;font-weight: 600; ">TURKCE</p>
+    <p style="width: 300px; text-align: center; ;font-size: 40px;font-weight: 600; ">ACIKLAMA</p>
+    <p style="width:300px ; text-align: center; ;font-size: 40px;font-weight: 600; ">RESIM</p>
+    </div> -->
+
+
+
+
+
+<div class="data-info" id="data-info">
+
+<!-- <div class="box">
+<i class="fas fa-user"></i>
+<div class="data">
+    <p>user</p>
+ <span>100</span>
+</div>
+</div>
+
+<div class="box">
+    <i class="fas fa-pen"></i>
+    <div class="data">
+        <p>posts</p>
+     <span>150</span>
+    </div>
+    </div>
+
+
+    <div class="box">
+        <i class="fas fa-table"></i>
+        <div class="data">
+            <p>products</p>
+         <span>578</span>
+        </div>
+        </div>
+ -->
+
+
+  
+          
+
+            
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+            <!-- <script>
+                // استرجاع الصور المحفوظة
+                var savedImages = JSON.parse(localStorage.getItem('savedImages')) || [];
+                var previewImagesContainer = document.getElementById('previewImagesContainer');
+        
+                // عرض الصور في الصفحة الثانية
+                savedImages.forEach(function(imageSrc) {
+                    var imgElement = document.createElement('img');
+                    imgElement.src = imageSrc;
+                
+
+
+                    var divElement = document.createElement('div');  
+                    var body = document.getElementById('body')
+                    divElement.appendChild(imgElement);
+                    body.appendChild( divElement);
+                   
+                });
+            </script> -->
+        
+        
+    <script>
+
+
+const currentUserData = JSON.parse(sessionStorage.getItem("currentUserData"));
+
+if (currentUserData) {
+  
+   document.getElementById("profileName").innerHTML=currentUserData.name
+    
+}
+
+    </script>
+
+
+
+<script src="index.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

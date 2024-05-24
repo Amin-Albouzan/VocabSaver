@@ -1,0 +1,166 @@
+body{
+    /* background-image: -moz-linear-gradient(skyblue ,rgba(34, 34, 238, 0.778)); */
+    background-color: rgb(3, 3, 31);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    }
+    
+    .amin{
+    width: 50%;
+    height: 90%;
+    background-color: rgb(250,250,250,.1);
+    
+    
+    
+    }
+    .text{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    }
+    
+    .email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .email input{
+    padding: 10px 10px;
+    margin: 30px;
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    
+    }
+    
+    .password{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .password input{
+    
+    
+        padding: 10px 10px;
+        margin: 30px;
+        width: 60%;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 5px;
+        
+    }
+    
+    .sifre1
+    {
+        text-align: end;
+    margin-right: 20px;
+    }
+    
+    
+    .sifre2
+    {
+        
+       
+        text-decoration: none; 
+        color: white;
+    
+    
+    }
+    
+    .sifre2:hover{
+    
+        color: rgb(143, 223, 255);
+    }
+    
+    
+    
+    
+    
+    .but{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .but button{
+    
+        padding: 7px 7px;
+    margin-top: 20px;
+        width: 60%;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 10px;
+        color: rgb(11, 143, 196);
+        cursor: pointer;
+    }
+    
+    .dont{
+    text-align: center;
+    margin-top: 60px;
+    }
+    .text:hover{
+        color: rgb(11, 143, 196);
+    }
+    @media(max-width:900px)
+    {
+    .amin{
+    width: 90%;
+    }
+    }
+    
+    #emailOrPassword
+    {
+     text-align: center;
+    color: rgb(190, 23, 23);
+    
+    }
+    
+    #yeniSifreGonderildi
+    {
+    
+      display: none;
+    }
+    
+    #newPassword
+    {
+    display: none;
+    
+    }
+    
+    #confrm
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+        
+    }
+    
+    
+    
+    
+    #confrm input
+    {
+    
+    
+        padding: 10px 10px;
+        margin: 30px;
+        width: 60%;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    
+    

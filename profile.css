@@ -1,0 +1,47 @@
+body
+{
+  background-color: rgb(3, 3, 31); 
+  height: 100vh;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container
+{
+margin: auto;
+width: 80%;
+height: 88%;
+background-color: rgb(250, 250, 250,.1);
+display: flex;
+
+}
+.userData
+{
+    width: 50%;
+   border-right:solid 1px black;
+}
+
+
+#iconStyle
+{
+    width: 100%;
+color: white;
+font-size: 100px;
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.userData h1
+{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow-wrap: break-word;
+}

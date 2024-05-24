@@ -1,0 +1,90 @@
+body
+{
+    background-color: rgb(3, 3, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    color: white;
+}
+
+
+
+.container
+{
+width: 80%;
+height: 95%;
+background-color: rgb(250, 250, 250,.1);
+}
+
+
+.yeniKelimecikmaSayisiDegistirme
+{
+
+width: 100%;
+height: 50%;
+border-bottom: solid 2px rgb(3, 3, 31);
+}
+.wewe
+{
+text-align: center;
+overflow-wrap: break-word;
+padding-top: 10px;
+
+}
+.divInput
+{
+
+display: flex;
+justify-content: center;
+padding-top: 60px;
+padding-bottom: 50px;
+
+}
+
+
+
+
+.yeniKelimecikmaSayisiDegistirme input
+{
+  width: 50%;  
+  font-size: large;
+text-align: center;  
+}
+
+.yeniKelimecikmaSayisiDegistirme p
+{
+    color:rgb(241, 59, 59);
+    text-align: center;
+}
+.divButton
+{
+display: flex;
+justify-content: center;
+padding-top: 40px;
+}
+
+.divButton button
+{
+cursor: pointer;
+font-size: 16px;
+}
+
+.divButton button:hover
+{
+letter-spacing: 1px;
+background-color: rgba(255, 255, 255, 0.75);
+
+}
+
+
+
+
+.divButton button
+{
+
+    width: 300px;
+    height: 25px;
+text-align: center;
+
+}
