@@ -76,5 +76,4 @@ Proje, aşağıdaki dosya ve dizinlerden oluşur:
 - Daha detaylı quiz analitiği ve ilerleme takibi eklemek.
 - Kullanıcı deneyimini iyileştirmek için arayüzü geliştirmek.
 
-## İletişim
-Herhangi bir soru veya geri bildirim için lütfen [İsminiz] ile [E-posta Adresiniz] adresinden iletişime geçin.
+
