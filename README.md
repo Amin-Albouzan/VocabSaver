@@ -71,9 +71,6 @@ Proje, aşağıdaki dosya ve dizinlerden oluşur:
 1. Quiz sayfasına (`Quiz.html`) gidin.
 2. Talimatları izleyerek quiz yapın ve sonuçlarınızı görüntüleyin.
 
-## Gelecekteki Geliştirmeler
-- Daha iyi veri güvenliği için sunucu tarafı depolama uygulaması.
-- Daha detaylı quiz analitiği ve ilerleme takibi eklemek.
-- Kullanıcı deneyimini iyileştirmek için arayüzü geliştirmek.
+
 
 
